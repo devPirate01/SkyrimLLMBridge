@@ -54,6 +54,8 @@ def build_structured_system_prompt(profile: dict, quest_policy: QuestPolicy, npc
             policies_text += f"  Goal: {p['response_directive'].get('goal', '')}\n"
         if p.get("award_clues"):
             policies_text += f"  Awards Clues: [{_format_list(p['award_clues'])}]\n"
+        if "response_type" in p:
+            policies_text += f"  Required Response Type: {p['response_type']}\n"
 
     return f"""You are controlling one Skyrim NPC conversation turn.
 
@@ -75,6 +77,7 @@ REQUIRED OUTPUT SHAPE
 RULES
 - Use only values from the controlled vocabulary.
 - Follow the selected policy's response directive.
+- Your response_type MUST exactly match the Required Response Type for your selected policy.
 - Keep dialogue to no more than three short sentences.
 - clue_claims may contain only clues actually communicated in dialogue.
 - Never return a forbidden clue.
