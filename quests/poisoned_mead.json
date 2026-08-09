@@ -1,0 +1,385 @@
+{
+  "_meta": {
+    "file_name": "poisoned_mead.json",
+    "schema_version": "1.0",
+    "module": "8.5.2",
+    "purpose": "Defines the allowed intents, topics, response types, canonical clues, and dialogue policies for the minimal Poisoned Mead proof of concept. Python validates model output against this file before Skyrim receives dialogue or clue updates.",
+    "authoritative_state": "Skyrim remains authoritative for the quest stage and acquired clue Globals. This file defines policy, not saved game state.",
+    "current_scope": "One custom LLM tavern witness may communicate C1. The existing branching Bard may communicate C4. No game actions are enabled.",
+    "policy_revision": "1.1",
+    "policy_revision_note": "Broadens safe policy-intent combinations observed during live Skyrim testing. This prevents valid generic case questions and follow-ups from being rejected solely because the model selected a semantically suitable policy with a neighbouring intent label."
+  },
+  "quest": {
+    "quest_id": "poisoned_mead",
+    "creation_kit_id": "MMJ_PoisonedMeadQuest",
+    "minimum_solution_clues": [
+      "C1",
+      "C4"
+    ],
+    "active_stage_min": 10,
+    "confrontation_stage": 30
+  },
+  "vocabulary": {
+    "intents": [
+      "greet",
+      "social_chat",
+      "ask_for_information",
+      "ask_for_clarification",
+      "ask_for_repetition",
+      "request_quest_guidance",
+      "offer_information",
+      "unclear"
+    ],
+    "topics": [
+      "none",
+      "victim",
+      "drink",
+      "poison",
+      "map",
+      "argument",
+      "suspect",
+      "witness",
+      "quest_progress",
+      "personal",
+      "unrelated"
+    ],
+    "response_types": [
+      "social_reply",
+      "provide_quest_information",
+      "repeat_known_information",
+      "deny_knowledge",
+      "provide_guidance",
+      "request_clarification",
+      "acknowledge_information"
+    ],
+    "action_types": [
+      "none"
+    ]
+  },
+  "clues": {
+    "C1": {
+      "canonical_fact": "The mead was poisoned with Nightshade extract.",
+      "creation_kit_global": "MMJ_C1Acquired",
+      "permitted_sources": [
+        "tavern_witness"
+      ],
+      "prohibited_sources": [
+        "bard_witness"
+      ]
+    },
+    "C4": {
+      "canonical_fact": "Vigund argued with someone about a Dwemer ruin map.",
+      "creation_kit_global": "MMJ_C4Acquired",
+      "permitted_sources": [
+        "bard_witness"
+      ],
+      "prohibited_sources": [
+        "tavern_witness"
+      ]
+    }
+  },
+  "npc_knowledge": {
+    "tavern_witness": {
+      "allowed_clues": [
+        "C1"
+      ],
+      "forbidden_clues": [
+        "C4"
+      ],
+      "may_request_actions": false
+    },
+    "bard_witness": {
+      "allowed_clues": [
+        "C4"
+      ],
+      "forbidden_clues": [
+        "C1"
+      ],
+      "may_request_actions": false
+    }
+  },
+  "policies": [
+    {
+      "policy_id": "witness_greeting",
+      "npc_ids": [
+        "tavern_witness"
+      ],
+      "when": {
+        "intents": [
+          "greet"
+        ],
+        "topics": [
+          "none",
+          "personal"
+        ]
+      },
+      "reply_mode": "generate",
+      "response_type": "social_reply",
+      "response_directive": {
+        "goal": "Give a brief, natural greeting in character.",
+        "must_not_communicate_clues": [
+          "C1",
+          "C4"
+        ]
+      },
+      "award_clues": []
+    },
+    {
+      "policy_id": "witness_social_reply",
+      "npc_ids": [
+        "tavern_witness"
+      ],
+      "when": {
+        "intents": [
+          "social_chat"
+        ],
+        "topics": [
+          "personal",
+          "unrelated"
+        ]
+      },
+      "reply_mode": "generate",
+      "response_type": "social_reply",
+      "response_directive": {
+        "goal": "Answer briefly in character. If the question is outside reasonable knowledge, say so naturally.",
+        "must_not_communicate_clues": [
+          "C1",
+          "C4"
+        ]
+      },
+      "award_clues": []
+    },
+    {
+      "policy_id": "witness_reveal_c1",
+      "npc_ids": [
+        "tavern_witness"
+      ],
+      "when": {
+        "intents": [
+          "ask_for_information"
+        ],
+        "topics": [
+          "drink",
+          "poison"
+        ],
+        "quest_stage_min": 10,
+        "required_clue_not_known": "C1"
+      },
+      "reply_mode": "generate",
+      "response_type": "provide_quest_information",
+      "response_directive": {
+        "goal": "Answer the player's question and clearly communicate the canonical C1 fact in one to three short sentences.",
+        "must_communicate_facts": [
+          "The mead was poisoned with Nightshade extract."
+        ],
+        "must_not_communicate_clues": [
+          "C4"
+        ],
+        "must_not_identify_culprit": true,
+        "tone": "direct, practical, and concerned"
+      },
+      "award_clues": [
+        "C1"
+      ]
+    },
+    {
+      "policy_id": "witness_repeat_c1",
+      "npc_ids": [
+        "tavern_witness"
+      ],
+      "when": {
+        "intents": [
+          "ask_for_information",
+          "ask_for_clarification",
+          "ask_for_repetition"
+        ],
+        "topics": [
+          "drink",
+          "poison"
+        ],
+        "quest_stage_min": 10,
+        "required_clue_known": "C1"
+      },
+      "reply_mode": "generate",
+      "response_type": "repeat_known_information",
+      "response_directive": {
+        "goal": "Repeat or clarify the Nightshade fact without introducing new evidence.",
+        "may_communicate_clues": [
+          "C1"
+        ],
+        "must_not_communicate_clues": [
+          "C4"
+        ]
+      },
+      "award_clues": []
+    },
+    {
+      "policy_id": "witness_deny_map_knowledge",
+      "npc_ids": [
+        "tavern_witness"
+      ],
+      "when": {
+        "intents": [
+          "ask_for_information",
+          "ask_for_clarification",
+          "ask_for_repetition"
+        ],
+        "topics": [
+          "map",
+          "argument",
+          "suspect"
+        ]
+      },
+      "reply_mode": "generate",
+      "response_type": "deny_knowledge",
+      "response_directive": {
+        "goal": "State naturally that the witness does not know about the map, argument, motive, or culprit. The witness may suggest asking someone who watched the room.",
+        "must_not_communicate_clues": [
+          "C4"
+        ],
+        "must_not_identify_culprit": true
+      },
+      "award_clues": []
+    },
+    {
+      "policy_id": "witness_provide_guidance",
+      "npc_ids": [
+        "tavern_witness"
+      ],
+      "when": {
+        "intents": [
+          "request_quest_guidance",
+          "ask_for_information"
+        ],
+        "topics": [
+          "quest_progress",
+          "victim",
+          "drink",
+          "witness"
+        ]
+      },
+      "reply_mode": "generate",
+      "response_type": "provide_guidance",
+      "response_directive": {
+        "goal": "Suggest examining Vigund's table or tankard without revealing the exact environmental finding.",
+        "must_not_communicate_clues": [
+          "C1",
+          "C4"
+        ]
+      },
+      "award_clues": []
+    },
+    {
+      "policy_id": "witness_acknowledge_information",
+      "npc_ids": [
+        "tavern_witness"
+      ],
+      "when": {
+        "intents": [
+          "offer_information",
+          "ask_for_information"
+        ],
+        "topics": [
+          "victim",
+          "drink",
+          "poison",
+          "map",
+          "argument",
+          "suspect",
+          "witness",
+          "quest_progress"
+        ]
+      },
+      "reply_mode": "generate",
+      "response_type": "acknowledge_information",
+      "response_directive": {
+        "goal": "Acknowledge what the player said without treating the player's claim as verified evidence and without revealing a new clue.",
+        "must_not_communicate_clues": [
+          "C1",
+          "C4"
+        ]
+      },
+      "award_clues": []
+    },
+    {
+      "policy_id": "witness_request_clarification",
+      "npc_ids": [
+        "tavern_witness"
+      ],
+      "when": {
+        "intents": [
+          "unclear",
+          "ask_for_clarification",
+          "ask_for_information"
+        ],
+        "topics": [
+          "none",
+          "victim",
+          "drink",
+          "poison",
+          "map",
+          "argument",
+          "suspect",
+          "witness",
+          "quest_progress",
+          "personal",
+          "unrelated"
+        ]
+      },
+      "reply_mode": "generate",
+      "response_type": "request_clarification",
+      "response_directive": {
+        "goal": "Ask one brief question to clarify what the player means.",
+        "must_not_communicate_clues": [
+          "C1",
+          "C4"
+        ]
+      },
+      "award_clues": []
+    }
+  ],
+  "bard_existing_branching_definition": {
+    "npc_id": "bard_witness",
+    "dialogue_condition": "branching",
+    "player_option": "What happened before Vigund died?",
+    "canonical_response_fact": "Vigund argued with someone about a Dwemer ruin map.",
+    "award_clues": [
+      "C4"
+    ],
+    "implemented": true
+  },
+  "fallbacks": {
+    "no_matching_policy": {
+      "reply_mode": "fixed",
+      "response_type": "request_clarification",
+      "dialogue": "Be clear. What exactly are you asking me about?",
+      "award_clues": []
+    },
+    "invalid_model_output": {
+      "reply_mode": "fixed",
+      "response_type": "technical_fallback",
+      "dialogue": "I cannot speak clearly just now. Try again in a moment.",
+      "award_clues": []
+    }
+  },
+  "validation": {
+    "required_output_fields": [
+      "schema_version",
+      "dialogue",
+      "player_intent",
+      "topic",
+      "policy_id",
+      "response_type",
+      "clue_claims",
+      "action_request"
+    ],
+    "maximum_dialogue_sentences": 3,
+    "maximum_repair_attempts": 1,
+    "allow_non_null_action_request": false,
+    "reject_unknown_intents": true,
+    "reject_unknown_topics": true,
+    "reject_unknown_policies": true,
+    "reject_forbidden_clues": true,
+    "skyrim_is_authoritative_for_clue_state": true
+  }
+}
