@@ -2,3 +2,5 @@
 *.env
 /memory/
 /logs/
+/DEVONLY/
+__pycache__/
