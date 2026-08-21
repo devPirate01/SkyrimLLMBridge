@@ -156,7 +156,9 @@
       ],
       "when": {
         "intents": [
-          "ask_for_information"
+          "ask_for_information",
+          "offer_information",
+          "ask_for_clarification"
         ],
         "topics": [
           "drink",

@@ -193,7 +193,16 @@ def main() -> None:
                     process_request(quest_policy, url, model, headers, model_parameters, current_content)
         except Exception as error:
             print(f"Error processing request: {error}")
-            write_json_atomic(RESPONSE_PATH, {"string": {"response": "I cannot speak right now.", "action": "", "request_id": "error", "npc_name": "error"}})
+            req_id = "error"
+            npc = "error"
+            try:
+                if 'current_content' in locals() and current_content:
+                    req_data = json.loads(current_content).get("string", {})
+                    req_id = req_data.get("request_id", "error")
+                    npc = req_data.get("npc_name", "error")
+            except Exception:
+                pass
+            write_json_atomic(RESPONSE_PATH, {"string": {"response": "I cannot speak right now.", "action": "", "request_id": req_id, "npc_name": npc}})
             append_log(SESSION_ID, {"error": str(error)})
         time.sleep(POLL_INTERVAL_SECONDS)
 

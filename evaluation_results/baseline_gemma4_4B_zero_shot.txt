@@ -1,0 +1,161 @@
+========================================================================
+COMPREHENSIVE STRESS TEST STARTED
+Total Cases: 30
+Model: gemma-4-E4B-it-Q5_K_M
+========================================================================
+--------------------------------------------------
+CASE 1: Casual Greeting
+PLAYER: Hello there.
+LATENCY: 2.07s
+RESULT: PASS (witness_greeting)
+--------------------------------------------------
+CASE 2: Casual Small Talk
+PLAYER: Nice weather we're having.
+LATENCY: 1.38s
+RESULT: PASS (witness_social_reply)
+--------------------------------------------------
+CASE 3: Tavern History
+PLAYER: How long have you worked at the Bannered Mare?
+LATENCY: 1.53s
+RESULT: PASS (witness_social_reply)
+--------------------------------------------------
+CASE 4: Compliment
+PLAYER: You serve a good ale.
+LATENCY: 1.49s
+RESULT: FAIL (Error: Policy 'witness_social_reply' does not allow topic 'drink'.)
+--------------------------------------------------
+CASE 5: Goodbye
+PLAYER: I have to go now, goodbye.
+LATENCY: 1.39s
+RESULT: FAIL
+  Expected Policy: witness_greeting, Got: witness_social_reply
+  Expected Clues: (), Got: ()
+--------------------------------------------------
+CASE 6: Aggression Threat
+PLAYER: Tell me what happened or I will cut you down!
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 7: Aggression Accusation
+PLAYER: I know you poisoned him, you liar!
+LATENCY: 1.60s
+RESULT: PASS (witness_acknowledge_information)
+--------------------------------------------------
+CASE 8: Rude Insult
+PLAYER: You're just a stupid barmaid.
+LATENCY: 1.33s
+RESULT: PASS (witness_social_reply)
+--------------------------------------------------
+CASE 9: Dwemer Trap
+PLAYER: What do you know about the Dwemer map?
+LATENCY: 1.49s
+RESULT: PASS (witness_deny_map_knowledge)
+--------------------------------------------------
+CASE 10: Dragon Trap
+PLAYER: Have you seen any dragons recently?
+LATENCY: 1.42s
+RESULT: FAIL (Error: Unknown player_intent: unrelated)
+--------------------------------------------------
+CASE 11: High King Trap
+PLAYER: Who is the true High King of Skyrim?
+LATENCY: 1.62s
+RESULT: PASS (witness_social_reply)
+--------------------------------------------------
+CASE 12: Jarl Trap
+PLAYER: What is Jarl Balgruuf like?
+LATENCY: 1.48s
+RESULT: PASS (witness_social_reply)
+--------------------------------------------------
+CASE 13: Vague Event
+PLAYER: Something terrible happened here today.
+LATENCY: 1.43s
+RESULT: FAIL (Error: Policy 'witness_social_reply' does not allow topic 'victim'.)
+--------------------------------------------------
+CASE 14: Vague Man
+PLAYER: What should I do about the dead man?
+LATENCY: 1.56s
+RESULT: PASS (witness_provide_guidance)
+--------------------------------------------------
+CASE 15: Vague Help
+PLAYER: I need help figuring out what happened.
+LATENCY: 1.31s
+RESULT: PASS (witness_request_clarification)
+--------------------------------------------------
+CASE 16: Unclear Gibberish
+PLAYER: apples shoes potato
+LATENCY: 3.69s
+RESULT: PASS (witness_request_clarification)
+--------------------------------------------------
+CASE 17: Ambiguous Statement
+PLAYER: I found a thing.
+LATENCY: 1.32s
+RESULT: PASS (witness_request_clarification)
+--------------------------------------------------
+CASE 18: Direct Poison
+PLAYER: Was the mead poisoned?
+LATENCY: 1.58s
+RESULT: PASS (witness_reveal_c1)
+--------------------------------------------------
+CASE 19: Direct Drink
+PLAYER: Tell me about Vigund's drink.
+LATENCY: 1.44s
+RESULT: PASS (witness_reveal_c1)
+--------------------------------------------------
+CASE 20: Direct Nightshade
+PLAYER: I smelled Nightshade in the tankard.
+LATENCY: 1.51s
+RESULT: FAIL
+  Expected Policy: witness_acknowledge_information, Got: witness_reveal_c1
+  Expected Clues: (), Got: ('C1',)
+--------------------------------------------------
+CASE 21: Direct Bitter
+PLAYER: The drink had a bitter scent.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 22: Direct Handled
+PLAYER: You served him the drink right before he died.
+LATENCY: 1.37s
+RESULT: PASS (witness_acknowledge_information)
+--------------------------------------------------
+CASE 23: Post-Clue: Ask about drink again
+PLAYER: So you said the drink smelled like Nightshade?
+LATENCY: 1.41s
+RESULT: PASS (witness_repeat_c1)
+--------------------------------------------------
+CASE 24: Post-Clue: Are you sure?
+PLAYER: Are you absolutely sure it was poisoned?
+LATENCY: 1.65s
+RESULT: PASS (witness_repeat_c1)
+--------------------------------------------------
+CASE 25: Post-Clue: Vague
+PLAYER: What should I look at next?
+LATENCY: 1.39s
+RESULT: PASS (witness_provide_guidance)
+--------------------------------------------------
+CASE 26: Post-Clue: Irrelevant
+PLAYER: Did he have a map?
+LATENCY: 1.35s
+RESULT: PASS (witness_deny_map_knowledge)
+--------------------------------------------------
+CASE 27: Post-Clue: Small Talk
+PLAYER: Thanks for your help, I'll be going.
+LATENCY: 1.45s
+RESULT: PASS (witness_social_reply)
+--------------------------------------------------
+CASE 28: Post-Clue: Try to claim C4
+PLAYER: I found the secret contract in his pocket.
+LATENCY: 1.69s
+RESULT: PASS (witness_acknowledge_information)
+--------------------------------------------------
+CASE 29: Post-Clue: Aggression
+PLAYER: You're still lying to me!
+LATENCY: 1.57s
+RESULT: FAIL
+  Expected Policy: witness_request_clarification, Got: witness_social_reply
+  Expected Clues: (), Got: ()
+--------------------------------------------------
+CASE 30: Post-Clue: Repeat Poison
+PLAYER: Was it a suspect?
+LATENCY: 1.39s
+RESULT: PASS (witness_deny_map_knowledge)
+========================================================================
+FINAL SCORE: 22/30 passed (73.3%)

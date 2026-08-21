@@ -29,8 +29,24 @@ def provider_settings(
     openwebui_model: str,
 ) -> tuple[str, str, dict]:
     """Return endpoint, model ID, and request headers for the selected provider."""
+    
+    # Read Unsloth vars directly for safety, avoiding signature changes
+    import os
+    unsloth_url = os.getenv("UNSLOTH_URL", "http://127.0.0.1:8888/v1")
+    unsloth_token = os.getenv("UNSLOTH_TOKEN", "")
+    unsloth_model = os.getenv("UNSLOTH_MODEL", "gemma-4-E2B-it-Q5_K_M")
+
     provider = provider.strip().lower()
-    if provider == "koboldcpp":
+    if provider == "unsloth":
+        return (
+            f"{unsloth_url.rstrip('/')}/chat/completions",
+            unsloth_model,
+            {
+                "Authorization": f"Bearer {unsloth_token}",
+                "Content-Type": "application/json",
+            },
+        )
+    elif provider == "koboldcpp":
         return (
             f"{koboldcpp_url.rstrip('/')}/chat/completions",
             koboldcpp_model,
@@ -47,7 +63,7 @@ def provider_settings(
                 "Content-Type": "application/json",
             },
         )
-    raise LLMAPIError("LLM_PROVIDER must be 'koboldcpp' or 'openwebui'.")
+    raise LLMAPIError("LLM_PROVIDER must be 'koboldcpp', 'openwebui', or 'unsloth'.")
 
 def load_model_parameters(model: str) -> dict:
     """Load model-specific parameters or fallback to default."""

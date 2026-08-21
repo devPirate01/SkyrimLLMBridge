@@ -33,56 +33,57 @@ def build_structured_system_prompt(profile: dict, quest_policy: QuestPolicy, npc
         f"Role: {profile.get('role', 'Unknown')}\n"
         f"Personality: {_format_list(profile.get('personality', []))}\n"
         f"Background: {_format_list(profile.get('background', []))}\n"
-        f"Behaviour Rules: {_format_list(profile.get('behaviour_rules', profile.get('response_rules', [])))}\n"
+        f"Behaviour: {_format_list(profile.get('behaviour_rules', profile.get('response_rules', [])))}\n"
     )
 
     vocab_text = (
-        f"Allowed Intents: {_format_list(quest_policy.allowed_intents)}\n"
-        f"Allowed Topics: {_format_list(quest_policy.allowed_topics)}\n"
-        f"Allowed Response Types: {_format_list(quest_policy.allowed_response_types)}\n"
-        f"Allowed Clues: {_format_list(quest_policy.allowed_clues_for_npc(npc_id))}\n"
-        f"Forbidden Clues: {_format_list(quest_policy.forbidden_clues_for_npc(npc_id))}\n"
+        f"Intents: {_format_list(quest_policy.allowed_intents)}\n"
+        f"Topics: {_format_list(quest_policy.allowed_topics)}\n"
+        f"Clues: {_format_list(quest_policy.allowed_clues_for_npc(npc_id))}\n"
+        f"Response Types: {_format_list(quest_policy.allowed_response_types)}\n"
     )
 
     npc_policies = quest_policy.policies_for_npc(npc_id)
     policies_text = ""
     for p in npc_policies:
-        policies_text += f"- Policy ID: {p['policy_id']}\n"
-        if "when" in p:
-            policies_text += f"  When Intent in [{_format_list(p['when'].get('intents',[]))}] AND Topic in [{_format_list(p['when'].get('topics',[]))}]\n"
-        if "response_directive" in p:
-            policies_text += f"  Goal: {p['response_directive'].get('goal', '')}\n"
-        if p.get("award_clues"):
-            policies_text += f"  Awards Clues: [{_format_list(p['award_clues'])}]\n"
+        policies_text += f"- {p['policy_id']}:"
+        
+        when = p.get("when", {})
+        conds = []
+        if "intents" in when:
+            conds.append(f"intent in [{_format_list(when['intents'])}]")
+        if "topics" in when:
+            conds.append(f"topic in [{_format_list(when['topics'])}]")
+        if "required_clue_not_known" in when:
+            conds.append(f"'{when['required_clue_not_known']}' not in known_clues")
+        if "required_clue_known" in when:
+            conds.append(f"'{when['required_clue_known']}' in known_clues")
+            
+        if conds:
+            policies_text += " if " + " & ".join(conds)
+            
         if "response_type" in p:
-            policies_text += f"  Required Response Type: {p['response_type']}\n"
+            policies_text += f" -> requires {p['response_type']}"
+            
+        policies_text += "\n"
 
-    return f"""You are controlling one Skyrim NPC conversation turn.
+    return f"""Control NPC. Return ONLY JSON.
 
-Interpret the player's communicative intent and topic, select exactly one
-eligible dialogue policy, and generate the NPC's in-character reply.
-
-Return only one valid JSON object. Do not use Markdown or code fences.
-Do not add text before or after the JSON object.
-
-CHARACTER PROFILE
+PROFILE
 {profile_text}
-CONTROLLED VOCABULARY
+VOCAB
 {vocab_text}
-ELIGIBLE QUEST POLICIES
+POLICIES
 {policies_text}
-REQUIRED OUTPUT SHAPE
-{json.dumps(build_output_contract(), indent=2)}
+SHAPE
+{json.dumps(build_output_contract())}
 
 RULES
-- Use only values from the controlled vocabulary.
-- Follow the selected policy's response directive.
-- Your response_type MUST exactly match the Required Response Type for your selected policy.
-- Keep dialogue to no more than three short sentences.
-- clue_claims may contain only clues actually communicated in dialogue.
-- Never return a forbidden clue.
-- action_request must be null for this proof of concept.
-- If the player's meaning is unclear, select witness_request_clarification.
+- Use only VOCAB values.
+- Match intent/topic to select ONE policy.
+- Keep dialogue short.
+- clue_claims must be valid or empty.
+- If unclear, use witness_request_clarification.
 """
 
 def build_turn_state(

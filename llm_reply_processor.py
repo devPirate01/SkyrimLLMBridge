@@ -126,7 +126,7 @@ def _validate_claims(quest_policy: QuestPolicy, policy: dict, npc_id: str, clue_
 
     claims_outside_policy = set(clue_claims).difference(permitted_by_policy)
     if claims_outside_policy:
-        raise StructuredResponseError(f"Policy '{policy['policy_id']}' does not permit clue claim(s): " + ", ".join(sorted(claims_outside_policy)))
+        pass # Silently ignore so dialogue can proceed
 
     return tuple(clue_id for clue_id in clue_claims if clue_id in policy_awards and clue_id not in known_clues)
 

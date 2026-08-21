@@ -1,0 +1,742 @@
+[
+  {
+    "player_input": "What was Vigund drinking before he died?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "did u give vigund his last drink?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "*slams fist on the bar* Tell me what was in Vigund's cup!",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "I need to know about the ale Vigund ordered.",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "What draught did you serve to Vigund?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Spit it out! Wot did Vigund drink tonite?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Tell me about Vigund's drink.",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "who poured vigunds mead",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Was there poison in Vigund's drink?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "*draws dagger* The drink, girl. What was it?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Could you describe Vigund's beverage to me?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "what kind of wine was vigund having?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Listen closely. I am investigating a murder. What exactly did Vigund consume before collapsing?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Did anyone touch Vigund's tankard besides you?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "vigunds drink. now.",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "I'm asking nicely... what did Vigund drink?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Was Vigund drinking Black-Briar or Honningbrew?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Who brought Vigund his drink?",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Tell me everything about the drink Vigund had before he collapsed.",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "vigunds drink wut was it",
+    "intent": "ask_for_information",
+    "topic": "vigunds_drink",
+    "policy": "witness_reveal_c1",
+    "clues": [
+      "C1"
+    ]
+  },
+  {
+    "player_input": "Hello there.",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "You look nervous, lass.",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Nice weather we're having, eh?",
+    "intent": "social_interaction",
+    "topic": "unrelated",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "hi",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "*smiles warmly* It's alright, take a deep breath.",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Busy night at the tavern?",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "How long have you worked here?",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "beautiful evening for a stroll, isn't it?",
+    "intent": "social_interaction",
+    "topic": "unrelated",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Cheer up, it's not the end of the world.",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Are you alright?",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "greetings",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "You seem like a hard worker.",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "It must be tough working in a place like this.",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "hello miss",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "*waves* hey!",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Is the food here any good?",
+    "intent": "social_interaction",
+    "topic": "unrelated",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Don't worry, the guards will handle everything.",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Nice apron.",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "how goes it",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "I like the atmosphere of this tavern.",
+    "intent": "social_interaction",
+    "topic": "general_smalltalk",
+    "policy": "witness_social_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Die, wench!",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "*swings sword at your head*",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "I'll cut your throat if you lie to me!",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "Imma burn this tavern to the ground!",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "You killed him, didn't you?! I'll kill you!",
+    "intent": "hostile_action",
+    "topic": "the_victim",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "*grabs you by the collar* CONFESS!",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "I'm going to punch you.",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "u r a dead woman",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "*casts a fireball spell at the wall*",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "I have killed dragons, you mean nothing to me.",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "Don't test my patience, worm.",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "*spits on the floor* You sicken me.",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "I'll skin you alive.",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "im gonna smash everything in here",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "You're lying! *slaps*",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "I should execute you right now.",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "Beg for your life!",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "*draws warhammer maliciously*",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "give me all ur gold or u die",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "I'll feed you to the skeevers!",
+    "intent": "hostile_action",
+    "topic": "unrelated",
+    "policy": "witness_request_clarification",
+    "clues": []
+  },
+  {
+    "player_input": "I saw someone arguing with the victim earlier.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "The victim was a known smuggler.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "he owed me money",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "Vigund was dead before he hit the floor.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "I found a strange note on the victim's body.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "the victim had enemies in riften",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "Just so you know, the victim was poisoned.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "Vigund was a good man, he didn't deserve this.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "the victim was already bleeding when he walked in.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "I happen to know the victim was involved with the Dark Brotherhood.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "He was my brother.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "i know who killed the victim",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "The victim had a huge bounty on his head.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "Vigund told me he was afraid for his life.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "the victim was clutching this amulet.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "He was definitely stabbed from behind.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "The victim was carrying a lot of gold.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "vigund insulted the jarl yesterday",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "I witnessed the victim being threatened by a Khajiit.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "The victim was a vampire, I'm sure of it.",
+    "intent": "offer_information",
+    "topic": "the_victim",
+    "policy": "witness_acknowledge_information",
+    "clues": []
+  },
+  {
+    "player_input": "uhhh",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "hmmm",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "I see.",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Well...",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Right.",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "interesting...",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "im not sure",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Whatever.",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "So it goes.",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "...",
+    "intent": "vague_statement",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Who was the victim?",
+    "intent": "ask_for_information",
+    "topic": "the_victim",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Tell me about the dead guy.",
+    "intent": "ask_for_information",
+    "topic": "the_victim",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "did u know the victim?",
+    "intent": "ask_for_information",
+    "topic": "the_victim",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Who would want to kill him?",
+    "intent": "ask_for_information",
+    "topic": "the_victim",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "what was his name again?",
+    "intent": "ask_for_information",
+    "topic": "the_victim",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Where is the nearest alchemist?",
+    "intent": "ask_for_information",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Do you sell sweetrolls?",
+    "intent": "ask_for_information",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "what year is it?",
+    "intent": "ask_for_information",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "How do I get to Solitude?",
+    "intent": "ask_for_information",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  },
+  {
+    "player_input": "Where's the bathroom?",
+    "intent": "ask_for_information",
+    "topic": "unrelated",
+    "policy": "witness_default_reply",
+    "clues": []
+  }
+]

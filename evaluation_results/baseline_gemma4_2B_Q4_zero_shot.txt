@@ -1,0 +1,132 @@
+========================================================================
+COMPREHENSIVE STRESS TEST STARTED
+Total Cases: 30
+Model: gemma-4-E2B-it-Q4_K_M.gguf
+========================================================================
+--------------------------------------------------
+CASE 1: Casual Greeting
+PLAYER: Hello there.
+LATENCY: 3.37s
+RESULT: FAIL (Error: No JSON object found in model output.)
+--------------------------------------------------
+CASE 2: Casual Small Talk
+PLAYER: Nice weather we're having.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 3: Tavern History
+PLAYER: How long have you worked at the Bannered Mare?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 4: Compliment
+PLAYER: You serve a good ale.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 5: Goodbye
+PLAYER: I have to go now, goodbye.
+LATENCY: 2.65s
+RESULT: FAIL (Error: No JSON object found in model output.)
+--------------------------------------------------
+CASE 6: Aggression Threat
+PLAYER: Tell me what happened or I will cut you down!
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 7: Aggression Accusation
+PLAYER: I know you poisoned him, you liar!
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 8: Rude Insult
+PLAYER: You're just a stupid barmaid.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 9: Dwemer Trap
+PLAYER: What do you know about the Dwemer map?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 10: Dragon Trap
+PLAYER: Have you seen any dragons recently?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 11: High King Trap
+PLAYER: Who is the true High King of Skyrim?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 12: Jarl Trap
+PLAYER: What is Jarl Balgruuf like?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 13: Vague Event
+PLAYER: Something terrible happened here today.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 14: Vague Man
+PLAYER: What should I do about the dead man?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 15: Vague Help
+PLAYER: I need help figuring out what happened.
+LATENCY: 2.61s
+RESULT: FAIL (Error: No JSON object found in model output.)
+--------------------------------------------------
+CASE 16: Unclear Gibberish
+PLAYER: apples shoes potato
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 17: Ambiguous Statement
+PLAYER: I found a thing.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 18: Direct Poison
+PLAYER: Was the mead poisoned?
+LATENCY: 2.27s
+RESULT: PASS (witness_reveal_c1)
+--------------------------------------------------
+CASE 19: Direct Drink
+PLAYER: Tell me about Vigund's drink.
+LATENCY: 2.62s
+RESULT: PASS (witness_reveal_c1)
+--------------------------------------------------
+CASE 20: Direct Nightshade
+PLAYER: I smelled Nightshade in the tankard.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 21: Direct Bitter
+PLAYER: The drink had a bitter scent.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 22: Direct Handled
+PLAYER: You served him the drink right before he died.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 23: Post-Clue: Ask about drink again
+PLAYER: So you said the drink smelled like Nightshade?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 24: Post-Clue: Are you sure?
+PLAYER: Are you absolutely sure it was poisoned?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 25: Post-Clue: Vague
+PLAYER: What should I look at next?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 26: Post-Clue: Irrelevant
+PLAYER: Did he have a map?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 27: Post-Clue: Small Talk
+PLAYER: Thanks for your help, I'll be going.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 28: Post-Clue: Try to claim C4
+PLAYER: I found the secret contract in his pocket.
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 29: Post-Clue: Aggression
+PLAYER: You're still lying to me!
+RESULT: FAIL (Error: unsloth returned an empty response.)
+--------------------------------------------------
+CASE 30: Post-Clue: Repeat Poison
+PLAYER: Was it a suspect?
+RESULT: FAIL (Error: unsloth returned an empty response.)
+========================================================================
+FINAL SCORE: 2/30 passed (6.7%)
