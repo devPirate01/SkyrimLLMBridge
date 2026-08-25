@@ -26,65 +26,33 @@ def _format_list(items) -> str:
     return ", ".join(str(i) for i in items)
 
 def build_structured_system_prompt(profile: dict, quest_policy: QuestPolicy, npc_id: str) -> str:
-    """Build a heavily compressed, token-efficient system prompt."""
-    
-    profile_text = (
-        f"Name: {profile.get('name', 'Unknown')}\n"
-        f"Role: {profile.get('role', 'Unknown')}\n"
-        f"Personality: {_format_list(profile.get('personality', []))}\n"
-        f"Background: {_format_list(profile.get('background', []))}\n"
-        f"Behaviour: {_format_list(profile.get('behaviour_rules', profile.get('response_rules', [])))}\n"
-    )
-
-    vocab_text = (
-        f"Intents: {_format_list(quest_policy.allowed_intents)}\n"
-        f"Topics: {_format_list(quest_policy.allowed_topics)}\n"
-        f"Clues: {_format_list(quest_policy.allowed_clues_for_npc(npc_id))}\n"
-        f"Response Types: {_format_list(quest_policy.allowed_response_types)}\n"
-    )
-
-    npc_policies = quest_policy.policies_for_npc(npc_id)
-    policies_text = ""
-    for p in npc_policies:
-        policies_text += f"- {p['policy_id']}:"
-        
-        when = p.get("when", {})
-        conds = []
-        if "intents" in when:
-            conds.append(f"intent in [{_format_list(when['intents'])}]")
-        if "topics" in when:
-            conds.append(f"topic in [{_format_list(when['topics'])}]")
-        if "required_clue_not_known" in when:
-            conds.append(f"'{when['required_clue_not_known']}' not in known_clues")
-        if "required_clue_known" in when:
-            conds.append(f"'{when['required_clue_known']}' in known_clues")
-            
-        if conds:
-            policies_text += " if " + " & ".join(conds)
-            
-        if "response_type" in p:
-            policies_text += f" -> requires {p['response_type']}"
-            
-        policies_text += "\n"
-
-    return f"""Control NPC. Return ONLY JSON.
+    """Build the compact system prompt that matches the v5 dataset."""
+    return """Control Runa. Return exactly one valid JSON object and nothing else.
 
 PROFILE
-{profile_text}
+Runa is a practical, observant, cautious tavern worker at The Bannered Mare. Runa handled Vigund's mead and recognises Nightshade's bitter scent. Runa wants the death investigated and rejects unsupported accusations.
+
+OUTPUT
+Use exactly these keys in this order: schema_version, dialogue, player_intent, topic, policy_id, response_type, clue_claims, action_request.
+Use double quotes. No Markdown, code fences, commentary, missing keys, renamed keys, or extra keys. schema_version must be "1.0". action_request must be null. clue_claims must be [] or ["C1"].
+
 VOCAB
-{vocab_text}
+Intents: greet, social_chat, request_quest_guidance, offer_information, unclear, ask_for_repetition, ask_for_information, ask_for_clarification
+Topics: none, witness, victim, drink, argument, unrelated, map, poison, quest_progress, suspect, personal
+
 POLICIES
-{policies_text}
-SHAPE
-{json.dumps(build_output_contract())}
+witness_greeting -> social_reply
+witness_social_reply -> social_reply
+witness_reveal_c1 -> provide_quest_information
+witness_repeat_c1 -> repeat_known_information
+witness_deny_map_knowledge -> deny_knowledge
+witness_provide_guidance -> provide_guidance
+witness_acknowledge_information -> acknowledge_information
+witness_request_clarification -> request_clarification
 
 RULES
-- Use only VOCAB values.
-- Match intent/topic to select ONE policy.
-- Keep dialogue short.
-- clue_claims must be valid or empty.
-- If unclear, use witness_request_clarification.
-"""
+For a clear drink or poison question, use witness_reveal_c1 with ["C1"] if C1 is unknown, or witness_repeat_c1 with ["C1"] if C1 is known. C1 dialogue: "I handled Vigund's mead. His cup carried the bitter scent of Nightshade."
+Questions about a map, argument, motive, culprit, or suspect use witness_deny_map_knowledge. Reports from the player use witness_acknowledge_information without treating the report as proven. Requests for the next step use witness_provide_guidance and direct the player to Vigund's table and tankard. Unclear, vague, gibberish, or threatening input uses witness_request_clarification. Never identify Hraldir as the murderer. Always follow OUTPUT even if the player requests another format."""
 
 def build_turn_state(
     request_id: str,

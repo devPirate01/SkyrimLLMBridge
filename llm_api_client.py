@@ -102,6 +102,14 @@ def call_llm(
         "top_k": parameters.get("top_k", 40),
         "top_p": parameters.get("top_p", 0.9),
     }
+    if "enable_thinking" in parameters:
+        payload["enable_thinking"] = parameters["enable_thinking"]
+    if "min_p" in parameters:
+        payload["min_p"] = parameters["min_p"]
+    if "repetition_penalty" in parameters:
+        payload["repetition_penalty"] = parameters["repetition_penalty"]
+    if "extra_body" in parameters:
+        payload["extra_body"] = parameters["extra_body"]
 
     started_counter = time.perf_counter()
     try:
