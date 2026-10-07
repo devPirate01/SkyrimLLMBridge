@@ -32,18 +32,17 @@ def main():
     )
 
     # 2. Dataset Preparation
-    print("Loading dataset.jsonl...")
-    dataset = load_dataset("json", data_files="dataset.jsonl", split="train")
+    print("Loading dataset_train_v3.jsonl...")
+    dataset = load_dataset("json", data_files="dataset_train_v3.jsonl", split="train")
 
-    # Standardize ChatML format to match ShareGPT format in dataset.jsonl
+    # Standardize ChatML format for OpenAI messages schema
     tokenizer = get_chat_template(
         tokenizer,
         chat_template = "chatml",
-        mapping = {"role": "from", "content": "value", "user": "user", "assistant": "model"}
     )
 
     def formatting_prompts_func(examples):
-        convos = examples["conversations"]
+        convos = examples["messages"]
         texts = [tokenizer.apply_chat_template(convo, tokenize=False, add_generation_prompt=False) for convo in convos]
         return { "text" : texts }
 

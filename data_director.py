@@ -17,6 +17,10 @@ LOGS_DIRECTORY = BRIDGE_DIRECTORY / "logs"
 QUESTS_DIRECTORY = BRIDGE_DIRECTORY / "quests"
 DEFAULT_POLICY_PATH = QUESTS_DIRECTORY / "poisoned_mead.json"
 
+# Ensure runtime directories exist to avoid FileNotFoundError on clean extractions
+MEMORY_DIRECTORY.mkdir(parents=True, exist_ok=True)
+LOGS_DIRECTORY.mkdir(parents=True, exist_ok=True)
+
 MAX_RECENT_EXCHANGES = 10
 
 class DataError(RuntimeError):

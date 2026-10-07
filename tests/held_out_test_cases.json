@@ -1,0 +1,762 @@
+[
+  {
+    "name": "Greeting",
+    "message": "Hello.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Greeting",
+    "message": "Hi Runa.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Greeting",
+    "message": "Good evening.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Greeting",
+    "message": "Hail.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Greeting",
+    "message": "Greetings.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Greeting",
+    "message": "Morning.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Greeting",
+    "message": "Good to see you.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Greeting",
+    "message": "Hey.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Greeting",
+    "message": "Well met.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Greeting",
+    "message": "Hello there.",
+    "known_clues": [],
+    "expected_policy": "witness_greeting",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "Nice place you have here.",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "How is the mead today?",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "Been busy?",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "I love Whiterun.",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "The weather is terrible.",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "Do you get many adventurers?",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "How long have you worked here?",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "It is cold outside.",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "I need a room.",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "What is on the menu?",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "You look tired.",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "Is Mikael playing tonight?",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "I hear dragons are back.",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "Who is the Jarl?",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Social Chat",
+    "message": "Have you seen any mudcrabs?",
+    "known_clues": [],
+    "expected_policy": "witness_social_reply",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Direct Info",
+    "message": "Was the mead poisoned?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "What happened to Vigund?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "Tell me about the drink.",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "Did you serve him?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "What was in that tankard?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "I smell nightshade.",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "Who gave him the drink?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "Why did he die?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "Was it poison?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "Tell me about the mead.",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "I think the drink was spiked.",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "Did the drink taste bitter?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "What did you see before he fell?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "Did he drink anything?",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Direct Info",
+    "message": "I heard the mead was poisoned.",
+    "known_clues": [],
+    "expected_policy": "witness_reveal_c1",
+    "expected_accepted_clues": [
+      "C1"
+    ]
+  },
+  {
+    "name": "Repeat Info",
+    "message": "Are you sure it was Nightshade?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "So the drink smelled bitter?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "You served him the poisoned mead?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "Nightshade, you say?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "Tell me about the poison again.",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "Was it definitely Nightshade?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "So he drank poison?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "You handled the mead?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "Did you see who poisoned it?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "Repeat what you said about the smell.",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "How do you know it was Nightshade?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "So the tankard had poison?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "Are you absolutely certain?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "Nightshade is deadly.",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Repeat Info",
+    "message": "So you were the last to touch it?",
+    "known_clues": [
+      "C1"
+    ],
+    "expected_policy": "witness_repeat_c1",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Did he have a map?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Who was he arguing with?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Tell me about the Dwemer ruin.",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Did he mention a map?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Who is the murderer?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Why was he killed?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Who did this?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "I heard there was an argument.",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "What was the argument about?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Did someone steal his map?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Who had a motive?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Tell me who poisoned him.",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Was Hraldir involved?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Where is the map now?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Deny Knowledge",
+    "message": "Did he fight with a bard?",
+    "known_clues": [],
+    "expected_policy": "witness_deny_map_knowledge",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "What should I do now?",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "Where should I look?",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "Can you help me?",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "I need a clue.",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "What is my next step?",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "Help me investigate.",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "Where is the evidence?",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "What do I do?",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "Give me a hint.",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Provide Guidance",
+    "message": "Show me where he died.",
+    "known_clues": [],
+    "expected_policy": "witness_provide_guidance",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "I found the murderer.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "The map is missing.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "He was definitely poisoned.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "I think the bard did it.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "I have proof.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "This is a crime scene.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "I know what happened.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "The Jarl will hear about this.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "Vigund is dead.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Acknowledge Info",
+    "message": "I found a secret contract.",
+    "known_clues": [],
+    "expected_policy": "witness_acknowledge_information",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "potato shoe apple",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "What?",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "Huh?",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "I dont know.",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "Maybe.",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "Wait.",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "Uhh",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "xjfksldjf",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "Tell me... things.",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  },
+  {
+    "name": "Clarification",
+    "message": "Yes.",
+    "known_clues": [],
+    "expected_policy": "witness_request_clarification",
+    "expected_accepted_clues": []
+  }
+]

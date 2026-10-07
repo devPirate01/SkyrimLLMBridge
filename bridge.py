@@ -31,7 +31,7 @@ from llm_reply_processor import StructuredResponseError, validate_structured_res
 BRIDGE_DIRECTORY = Path(__file__).resolve().parent
 load_dotenv(BRIDGE_DIRECTORY / ".env", override=True)
 
-SKYRIM_DATA_DIR = Path(r"H:\Games\TES - Skyrim - Anniversary Edition\Data\SKSE\Plugins\StorageUtilData\CompanionLLM")
+SKYRIM_DATA_DIR = Path(os.getenv("SKYRIM_DATA_DIR", r"H:\Games\TES - Skyrim - Anniversary Edition\Data\SKSE\Plugins\StorageUtilData\CompanionLLM"))
 REQUEST_PATH = SKYRIM_DATA_DIR / "request.json"
 RESPONSE_PATH = SKYRIM_DATA_DIR / "response.json"
 

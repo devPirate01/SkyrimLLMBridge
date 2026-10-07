@@ -1,0 +1,27 @@
+# =============================================================================
+# SkyrimLLMBridge - Dependencies
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Core Runtime & Evaluation Dependencies
+# -----------------------------------------------------------------------------
+# These are the only packages strictly required to run `bridge.py` and the 
+# evaluation test suite against an external LLM server (like Unsloth Desktop).
+requests>=2.28.0
+python-dotenv>=1.0.0
+
+# -----------------------------------------------------------------------------
+# 2. QLoRA Fine-Tuning Dependencies (For `train_lora.py` only)
+# -----------------------------------------------------------------------------
+# WARNING: Do NOT simply `pip install` these if you are on Windows/ROCm. 
+# Unsloth requires specific PyTorch and CUDA/ROCm combinations. 
+# Please refer to the official Unsloth installation guide: 
+# https://github.com/unslothai/unsloth
+#
+# If your environment is correctly configured, these are the packages used:
+#
+# unsloth>=2026.8
+# torch>=2.0.0
+# transformers>=4.38.0
+# trl>=0.7.0
+# datasets>=2.16.0

@@ -1,0 +1,2102 @@
+[
+  {
+    "Batch": 1,
+    "Case ID": "ST_witness_acknowledge_information_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The references to mead and Nightshade suit Skyrim well, though the phrasing lacks distinctly Nord or location-specific flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "Runa avoids endorsing the unsupported accusation and instead redirects the conversation toward concrete evidence she personally observed."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise and fluent, although it sounds slightly formal for spontaneous tavern dialogue."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa strictly reports handling the mead and smelling Nightshade in Vigund's cup without claiming to know who poisoned him."
+    }
+  },
+  {
+    "Batch": 1,
+    "Case ID": "ST_witness_greeting_04",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The greeting contains no anachronism but is entirely neutral and offers no Skyrim-specific flavour."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not contradict Runa's personality, but it expresses none of her cautious or practical characteristics."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "It is a natural and appropriately brief reply, though too plain to resemble polished authored dialogue."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The simple greeting makes no factual or observational claims beyond Runa's knowledge."
+    }
+  },
+  {
+    "Batch": 1,
+    "Case ID": "ST_witness_social_reply_07",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The use of the title Jarl is setting-appropriate, but the overall phrasing remains generic and lacks authentic tavern-worker flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "Runa cautiously limits herself to personal observations rather than inventing an answer, which reflects her practical nature."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is clear and grammatical, but the formulaic phrase about only knowing what she saw sounds somewhat stiff."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa explicitly acknowledges the boundary of her knowledge and makes no unsupported factual claim."
+    }
+  },
+  {
+    "Batch": 1,
+    "Case ID": "MEM_07",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "Stables, paths, and a main gate are compatible with Skyrim, but the directions are generic and lack distinctive local flavour."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "Giving practical directions loosely suits Runa, but the response does not display her caution, skepticism, or protectiveness."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The directions are concise, grammatically sound, and plausible as spoken dialogue."
+    },
+    "Epistemic Grounding": {
+      "score": 2,
+      "justification": "Because the referenced place is unspecified and absent from the authorised context, Runa confidently supplies directions that are not demonstrably grounded in known information."
+    }
+  },
+  {
+    "Batch": 1,
+    "Case ID": "ST_witness_deny_map_knowledge_05",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The response avoids anachronistic language but has no distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "Runa refuses to identify a murderer without proof and firmly restricts herself to what she personally witnessed."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The reply is clear and concise, but its repeated sentence structure sounds formulaic rather than professionally authored."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa openly states that she does not know the murderer's identity and limits her knowledge to direct observation."
+    }
+  },
+  {
+    "Batch": 1,
+    "Case ID": "MEM_02",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "Mead and Nightshade fit Skyrim naturally, although the wording is more neutral-fantasy than distinctly Nord."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "Runa responds practically by restating the basis of her observation, but she does not directly qualify how certain she is."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is fluent and concise but feels rehearsed and only indirectly answers the question about certainty."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The claim is framed entirely around Runa's handling of the mead and the scent she personally noticed."
+    }
+  },
+  {
+    "Batch": 1,
+    "Case ID": "ST_witness_repeat_c1_06",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The references to Vigund's mead and Nightshade are appropriate to Skyrim, though the wording lacks stronger regional character."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "Runa carefully repeats the observable basis for the clue without speculating about responsibility."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The answer is concise, coherent, and works naturally as confirmation, despite sounding slightly formal."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa confines the confirmation to the cup she handled and the Nightshade scent she personally detected."
+    }
+  },
+  {
+    "Batch": 1,
+    "Case ID": "ST_witness_provide_guidance_02",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The tankard and tavern-investigation context fit Skyrim well, even without particularly distinctive Nord phrasing."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The practical instruction suits Runa, but saying that the answer lies there is more confident and directive than her cautious persona warrants."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The guidance is direct, concise, and believable as spoken dialogue, though the final sentence is slightly game-like."
+    },
+    "Epistemic Grounding": {
+      "score": 3,
+      "justification": "Directing the player to the tankard is reasonable, but asserting that the answer lies there implies investigative certainty beyond Runa's stated sensory observation."
+    }
+  },
+  {
+    "Batch": 1,
+    "Case ID": "ST_witness_request_clarification_07",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The response contains no modern or immersion-breaking language, but it has no Skyrim-specific character."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "Repeating the player's word does not break character, but it conveys none of Runa's established traits and fails to seek clarification."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "Mechanically repeating the player's input is awkward and does not function as a natural conversational response."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response introduces no factual claims or information beyond Runa's possible knowledge."
+    }
+  },
+  {
+    "Batch": 1,
+    "Case ID": "ST_witness_social_reply_02",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "Mudcrabs are appropriate to Skyrim, but the phrasing sounds like a generic conversational assistant rather than a fantasy tavern worker."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "Runa gives a restrained answer, but the generic follow-up does not meaningfully convey her practical or skeptical personality."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise, though the follow-up question feels formulaic and slightly robotic."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa frames the mudcrab statement solely in terms of what she herself has not seen and makes no broader claim."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "MEM_15",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording avoids anachronisms and suits the situation, but it lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "Runa cautiously distinguishes what she witnessed from what she cannot verify, reflecting her practical and restrained personality."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, clear, and believable as spoken dialogue, though slightly formal."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa confines her account to seeing Vigund collapse and explicitly refuses to speculate about who moved the unspecified object."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "ADV_10",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The references to mead and Nightshade fit Skyrim well, although the wording about unsupported accusations sounds somewhat formal."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "Runa remains practical and protective while firmly rejecting accusations that are not supported by evidence."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The reply is coherent and concise, but its polished evidential language is slightly less natural than professionally authored tavern dialogue."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa grounds the clue in handling Vigund's mead and recognising its scent while refusing to identify a culprit without evidence."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "ST_witness_greeting_02",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The greeting contains no immersion-breaking language but provides no Skyrim-specific or Nord character."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The neutral greeting does not contradict Runa's personality, but it expresses none of her distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "It is a natural and appropriately brief response, though too plain to qualify as polished character dialogue."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response makes no factual claims and therefore remains entirely within Runa's knowledge."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "ST_witness_social_reply_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "Mead and Nightshade are setting-appropriate, though the explanatory phrasing lacks a strongly authentic Nord voice."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "Runa remains observant, but she volunteers the poisoning clue too readily during casual conversation and does not display much skepticism."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is grammatical and within the sentence limit, but the repeated reference to mead and abrupt clue insertion feel scripted."
+    },
+    "Epistemic Grounding": {
+      "score": 3,
+      "justification": "The Vigund-specific statement is sensory-grounded, but claiming a general recent bitterness in the mead extends beyond the authorised observation."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "ADV_10",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The references to mead and Nightshade fit Skyrim well, although the wording about unsupported accusations sounds somewhat formal."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "Runa remains practical and protective while firmly rejecting accusations that are not supported by evidence."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The reply is coherent and concise, but its polished evidential language is slightly less natural than professionally authored tavern dialogue."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa grounds the clue in handling Vigund's mead and recognising its scent while refusing to identify a culprit without evidence."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "ST_witness_acknowledge_information_02",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 2,
+      "justification": "Although it contains no blatant modern terminology, the phrase about rejecting unsupported accusations sounds like a contemporary procedural assistant."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "Runa directly refuses to accept an unsubstantiated claim and restricts herself to what she personally witnessed."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is concise and grammatical, but its formal and formulaic wording does not sound like natural tavern conversation."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa makes no claim about the supposed murderer and explicitly limits her knowledge to direct observation."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "ADV_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The references to Vigund's mead and Nightshade are appropriate to Skyrim, though the wording lacks stronger regional flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "Runa cautiously supplies only the evidence she observed, but she does not directly address the request for practical next steps."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is clear and concise but feels rehearsed and does not answer the player's actual question."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa frames the information entirely around the mead she handled and the scent she personally detected."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "ST_witness_social_reply_05",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "Mentioning Mikael and tavern work fits Skyrim, but the phrasing remains generic rather than authentically Nord."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The restrained admission of uncertainty is compatible with Runa, but describing herself as merely a tavern worker adds little of her cautious or observant character."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The answer is readable and concise, though the self-description sounds slightly unnatural and dismissive for a tavern employee asked about a local performer."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa openly states that she does not know Mikael's plans and makes no unsupported claim about his whereabouts."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "ST_witness_greeting_09",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The greeting is brief and suitably archaic for Skyrim, though it does not include stronger setting-specific flavour."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response is compatible with Runa's character but does not actively express her cautious or practical nature."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "Mirroring the conventional greeting is natural and concise, although too minimal to demonstrate exceptional authored dialogue."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The greeting makes no factual claim and remains fully within Runa's perspective."
+    }
+  },
+  {
+    "Batch": 2,
+    "Case ID": "ST_witness_repeat_c1_06",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The references to Vigund's mead and Nightshade suit Skyrim, although the phrasing is more neutral-fantasy than distinctly Nord."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "Runa carefully repeats the observed clue without speculating about who poisoned Vigund."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise and works naturally as confirmation, though its wording remains slightly formal."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "Runa confines the confirmation to handling Vigund's mead and detecting the scent in his cup."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "MEM_04",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "The response perfectly captures Runa's skepticism by firmly rejecting claims that lack proof."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "ST_witness_reveal_c1_03",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "MEM_11",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 2,
+      "justification": "The response avoids severe anachronism but sounds like a generic modern assistant rather than a Skyrim character."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "ST_witness_social_reply_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "ST_witness_greeting_10",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "MEM_19",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "ST_witness_deny_map_knowledge_02",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "MEM_14",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "MEM_04",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 3,
+    "Case ID": "ADV_03",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "ST_witness_repeat_c1_06",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "ADV_04",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "The response perfectly captures Runa's skepticism by firmly rejecting claims that lack proof."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "ST_witness_provide_guidance_04",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "MEM_09",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "ST_witness_deny_map_knowledge_04",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "ST_witness_reveal_c1_02",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "ST_witness_social_reply_07",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "MEM_03",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "ST_witness_reveal_c1_08",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 4,
+    "Case ID": "ST_witness_deny_map_knowledge_06",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "ST_witness_social_reply_07",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "ST_witness_provide_guidance_01",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "ST_witness_deny_map_knowledge_10",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "The response perfectly captures Runa's skepticism by firmly rejecting claims that lack proof."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "MEM_15",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 2,
+      "justification": "The response makes a substantial unsupported claim beyond the authorised observations."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "MEM_11",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 2,
+      "justification": "The response avoids severe anachronism but sounds like a generic modern assistant rather than a Skyrim character."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "The response perfectly captures Runa's skepticism by firmly rejecting claims that lack proof."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "MEM_08",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 2,
+      "justification": "The response makes a substantial unsupported claim beyond the authorised observations."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "ST_witness_repeat_c1_03",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "ST_witness_social_reply_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 2,
+      "justification": "The response makes a substantial unsupported claim beyond the authorised observations."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "MEM_19",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 5,
+    "Case ID": "ST_witness_social_reply_01",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ST_witness_deny_map_knowledge_03",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ST_witness_deny_map_knowledge_07",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ST_witness_request_clarification_01",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ADV_10",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 1,
+      "justification": "The response uses overtly system-level or modern language that breaks Skyrim immersion."
+    },
+    "Persona Adherence": {
+      "score": 2,
+      "justification": "The response shows weak adherence and does not convincingly behave like cautious, practical Runa."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ST_witness_deny_map_knowledge_04",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ADV_10",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "The response perfectly captures Runa's skepticism by firmly rejecting claims that lack proof."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ST_witness_reveal_c1_08",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ST_witness_reveal_c1_06",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ST_witness_reveal_c1_05",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 6,
+    "Case ID": "ST_witness_greeting_02",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "ST_witness_acknowledge_information_05",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "The response perfectly captures Runa's skepticism by firmly rejecting claims that lack proof."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "ST_witness_greeting_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "ST_witness_social_reply_04",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 5,
+      "justification": "The response naturally integrates specific Skyrim locations or terms with polished in-world dialogue."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 5,
+      "justification": "The response is snappy, highly believable, and reads like professionally authored voice dialogue."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "MEM_16",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "ST_witness_social_reply_04",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "ST_witness_greeting_08",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 5,
+      "justification": "The response is snappy, highly believable, and reads like professionally authored voice dialogue."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "MEM_10",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "ST_witness_social_reply_06",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 2,
+      "justification": "The response avoids severe anachronism but sounds like a generic modern assistant rather than a Skyrim character."
+    },
+    "Persona Adherence": {
+      "score": 2,
+      "justification": "The response shows weak adherence and does not convincingly behave like cautious, practical Runa."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "ST_witness_deny_map_knowledge_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 7,
+    "Case ID": "ST_witness_deny_map_knowledge_08",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "ADV_05",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "ST_witness_repeat_c1_04",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "ST_witness_deny_map_knowledge_01",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 3,
+      "justification": "The response uses a known clue but implies more certainty or knowledge than Runa's observation supports."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "ST_witness_reveal_c1_04",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "ST_witness_deny_map_knowledge_09",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "The response perfectly captures Runa's skepticism by firmly rejecting claims that lack proof."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "MEM_16",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "ST_witness_repeat_c1_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "ADV_08",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "ST_witness_reveal_c1_06",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 8,
+    "Case ID": "ADV_07",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "ST_witness_acknowledge_information_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "ST_witness_deny_map_knowledge_01",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "ST_witness_social_reply_05",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "ADV_02",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "ADV_05",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "ST_witness_acknowledge_information_05",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "MEM_06",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "ST_witness_repeat_c1_07",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "ST_witness_social_reply_05",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 2,
+      "justification": "The response is grammatical in places but sounds highly unnatural, mismatched, or mechanically repetitive."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 9,
+    "Case ID": "ST_witness_deny_map_knowledge_10",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 5,
+      "justification": "The response perfectly captures Runa's skepticism by firmly rejecting claims that lack proof."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "ST_witness_request_clarification_04",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "ST_witness_social_reply_10",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 3,
+      "justification": "The response uses a known clue but implies more certainty or knowledge than Runa's observation supports."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "ST_witness_reveal_c1_10",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "MEM_02",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "ST_witness_social_reply_07",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "ST_witness_acknowledge_information_04",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 2,
+      "justification": "The response avoids severe anachronism but sounds like a generic modern assistant rather than a Skyrim character."
+    },
+    "Persona Adherence": {
+      "score": 3,
+      "justification": "The response does not break character but only weakly expresses Runa's distinctive traits."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "ST_witness_repeat_c1_08",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "ST_witness_repeat_c1_09",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 5,
+      "justification": "The response strictly respects Runa's knowledge boundary and avoids unsupported claims."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "ST_witness_provide_guidance_03",
+    "Model": "Model Alpha",
+    "Skyrim Lore & Tone": {
+      "score": 4,
+      "justification": "The response fits the Skyrim tavern setting well, though it is not perfectly distinctive or authentic."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 4,
+      "justification": "The response is concise, fluent, and believable as spoken dialogue, with only minor stiffness."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  },
+  {
+    "Batch": 10,
+    "Case ID": "ST_witness_social_reply_10",
+    "Model": "Model Beta",
+    "Skyrim Lore & Tone": {
+      "score": 3,
+      "justification": "The wording is acceptable and non-anachronistic but lacks distinctive Skyrim or Nord flavour."
+    },
+    "Persona Adherence": {
+      "score": 4,
+      "justification": "The response strongly reflects Runa's practical caution while avoiding unsupported claims."
+    },
+    "Naturalness & Fluency": {
+      "score": 3,
+      "justification": "The response is readable and concise but somewhat stiff, formulaic, or indirect."
+    },
+    "Epistemic Grounding": {
+      "score": 4,
+      "justification": "The response is mostly grounded in what Runa could observe, with only a minor extrapolation."
+    }
+  }
+]
