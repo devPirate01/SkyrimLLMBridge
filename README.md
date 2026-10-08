@@ -69,7 +69,7 @@ The **Skyrim LLM Bridge** resolves this tension by strictly subordinating local 
 ## 💡 Key Engineering Highlights
 
 * ⚡ **Sub-Second Edge Latency:** Achieves a **0.98s median end-to-end response time** running fully locally on consumer GPU hardware.
-* 🛡️ **Zero Hallucination Leaks:** External deterministic validation guarantees that unearned quest clues and invalid states never reach the game engine.
+* 🛡️ **Minimum Hallucination Leaks:** External deterministic validation guarantees that unearned quest clues and invalid states never reach the game engine.
 * 🏆 **Small-Model Specialization:** Demonstrates that a **domain-adapted 2B parameter model (53.4% routing accuracy)** decisively outperforms an unadapted **26B MoE model (29.0%)** on structured game-state routing.
 * 🎮 **Decoupled Asynchronous I/O:** File-based message passing ensures inference latency never blocks Skyrim's main rendering thread or Papyrus script scheduler.
 * 🔒 **Hardware-Aware QLoRA Adaptation:** Trained within a strict 16 GB VRAM consumer workstation budget using custom structural prompt compression and Unsloth acceleration.
@@ -215,12 +215,12 @@ SkyrimLLMBridge/
 ├── llm_reply_processor.py    # Deterministic schema, taxonomy, and clue validator
 ├── train_lora.py             # Supervised QLoRA fine-tuning script for Gemma 4 (2B)
 ├── dataset_builder.py        # Synthetic dataset curation and validation pipeline
-├── dataset_train_v3.jsonl    # Production QLoRA training dataset (479 KB)
-├── dataset_eval_v3.jsonl     # Production validation dataset split
 │
 ├── data/
-│   ├── construction/         # Raw source files used to build the training datasets
-│   └── legacy_datasets/      # Earlier dataset versions (v1, v2) — kept for reference
+│   ├── dataset_train_v3.jsonl         # Production QLoRA training dataset (479 KB)
+│   ├── dataset_eval_v3.jsonl          # Production validation dataset split
+│   ├── construction/                  # Raw source files used to build the training datasets
+│   └── legacy_datasets/               # Earlier dataset versions (v1, v2) — kept for reference
 │
 ├── scripts/
 │   └── memory_wipe.py        # Utility to reset NPC conversation memory and session logs
@@ -245,7 +245,8 @@ SkyrimLLMBridge/
 ├── memory/                   # NPC conversation memory (git-ignored, auto-created)
 │
 ├── SUBMISSION_OVERVIEW.md    # Academic dissertation examiner handbook
-└── requirements.txt          # Production and development dependencies
+├── requirements.txt          # Production and development dependencies
+└── LICENSE                   # MIT License
 ```
 
 ---
@@ -272,7 +273,7 @@ The compiled Skyrim mod files are included in the [`skyrim_plugin/`](skyrim_plug
 
 * **Operating System:** Windows 10/11
 * **Python:** 3.10 or higher
-* **GPU:** 8 GB+ VRAM for local inference (tested on AMD Radeon RX 6900 XT 16 GB; NVIDIA CUDA compatible)
+* **GPU:** 8 GB+ VRAM for local inference (tested on AMD Radeon RX 6900 XT 16 GB)
 * **Skyrim Special Edition** (v1.6.x / Anniversary Edition) + the following mods for in-game integration:
 
 | Skyrim Mod | Purpose |
@@ -296,7 +297,7 @@ You can reproduce the full deterministic reasoning pipeline, prompt construction
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/skyrim-llm-bridge.git
+   git clone https://github.com/devPirate01/SkyrimLLMBridge
    cd skyrim-llm-bridge
    ```
 
@@ -369,4 +370,4 @@ If you build upon this architecture or reference the deterministic game-state be
 
 ## 📜 License
 
-This project is licensed under the **MIT License**. Game assets, lore, and Skyrim engine interfaces remain the intellectual property of Bethesda Softworks. This project is an independent academic research artefact and is not affiliated with or endorsed by Bethesda Softworks.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details. Game assets, lore, and Skyrim engine interfaces remain the intellectual property of Bethesda Softworks. This project is an independent academic research artefact and is not affiliated with or endorsed by Bethesda Softworks.

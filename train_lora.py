@@ -4,6 +4,7 @@ from trl import SFTTrainer
 from transformers import TrainingArguments
 from unsloth.chat_templates import get_chat_template
 import os
+from pathlib import Path
 
 def main():
     # 1. Configuration
@@ -33,7 +34,8 @@ def main():
 
     # 2. Dataset Preparation
     print("Loading dataset_train_v3.jsonl...")
-    dataset = load_dataset("json", data_files="dataset_train_v3.jsonl", split="train")
+    dataset_path = str(Path(__file__).resolve().parent / "data" / "dataset_train_v3.jsonl")
+    dataset = load_dataset("json", data_files=dataset_path, split="train")
 
     # Standardize ChatML format for OpenAI messages schema
     tokenizer = get_chat_template(
