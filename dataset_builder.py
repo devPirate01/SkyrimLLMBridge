@@ -69,7 +69,7 @@ def build_authentic_dataset(external_data_file=None, num_samples=300):
     return train_data, eval_data
 
 if __name__ == "__main__":
-    external_file = Path(__file__).parent / "perfect_dataset_cleaned.json" 
+    external_file = Path(__file__).parent / "data" / "construction" / "perfect_dataset_cleaned.json"
     
     train, eval_set = build_authentic_dataset(external_file, 500)
     
