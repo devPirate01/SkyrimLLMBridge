@@ -217,18 +217,33 @@ SkyrimLLMBridge/
 ├── dataset_builder.py        # Synthetic dataset curation and validation pipeline
 ├── dataset_train_v3.jsonl    # Production QLoRA training dataset (479 KB)
 ├── dataset_eval_v3.jsonl     # Production validation dataset split
+│
+├── data/
+│   ├── construction/         # Raw source files used to build the training datasets
+│   └── legacy_datasets/      # Earlier dataset versions (v1, v2) — kept for reference
+│
+├── scripts/
+│   └── memory_wipe.py        # Utility to reset NPC conversation memory and session logs
+│
 ├── profiles/                 # NPC epistemic profiles (tavern_witness.json, alex.json)
 ├── quests/                   # Declarative quest policies and clue gating (poisoned_mead.json)
+├── model_parameters/         # Per-model inference parameter configs (temperature, top_k, etc.)
+│
 ├── skyrim_plugin/            # ⬅ Ready-to-install compiled Skyrim mod files
 │   ├── README_INSTALL.md              # Step-by-step installation guide
 │   ├── CompanionLLMV01.esp            # Main plugin (quest, NPC aliases, dialogue)
 │   ├── Seq/CompanionLLMV01.seq        # Start-Enabled Quest trigger
 │   └── Scripts/*.pex                  # Compiled Papyrus scripts (chat launcher, quest controller)
+│
 ├── tests/                    # Deterministic benchmark runners and frozen test suites
 │   ├── frozen_test_set_100.json         # Pre-registered 100-case evaluation suite
 │   ├── run_frozen_evaluation_auto.py    # Automated 5-seed benchmark executor
 │   └── test_comprehensive.py            # Standalone 30-case integration stress test
+│
 ├── evaluation_results/       # Pre-compiled empirical inference logs (1,500 trials) & CSVs
+├── logs/                     # Runtime session logs (git-ignored, auto-created)
+├── memory/                   # NPC conversation memory (git-ignored, auto-created)
+│
 ├── SUBMISSION_OVERVIEW.md    # Academic dissertation examiner handbook
 └── requirements.txt          # Production and development dependencies
 ```

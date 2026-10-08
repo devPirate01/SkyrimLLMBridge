@@ -1,6 +1,46 @@
-*.pyc
-*.env
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and runtime data
 /memory/
 /logs/
+*.log
+temp.txt
+temp/
+scratch/
+
+# Environment configurations and credentials
+.env
+.env.*
+*.env
+!.env.example
+
+# Development drafts, thesis text, and raw profiling logs
 /DEVONLY/
-__pycache__/
+
+# Virtual Environments
+venv/
+env/
+.venv/
+ENV/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# IDE and Editor configs
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Large model checkpoints / binary weights
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
