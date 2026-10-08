@@ -2,6 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Nexus Mods](https://img.shields.io/badge/Nexus%20Mods-194492-blue)](https://www.nexusmods.com/skyrimspecialedition/mods/194492)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Gemma%202B%20QLoRA-orange)](https://huggingface.co/devPirate01/SkyrimLLMBridge-Gemma-2B)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Skyrim%20SE-lightgrey)](#)
 [![Acceleration](https://img.shields.io/badge/acceleration-AMD%20ROCm%20%7C%20NVIDIA%20CUDA-purple)](#)
 [![Architecture](https://img.shields.io/badge/architecture-Deterministic%20State%20Machine-success)](#)
@@ -25,8 +27,8 @@
 - [Technical Stack](#-technical-stack)
 - [Repository Structure](#-repository-structure)
 - [Installation & Quickstart](#-installation--quickstart)
-  - [Mode A: Standalone AI Verification](#option-a-standalone-ai-verification-no-skyrim-required)
-  - [Mode B: Full In-Game Integration](#option-b-full-in-game-skyrim-integration)
+  - [Option A: Complete Skyrim Setup (The 3 Steps)](#option-a-complete-skyrim-setup-the-3-steps)
+  - [Option B: Standalone AI Verification](#option-b-standalone-ai-verification-no-skyrim-required)
 - [Academic Citation](#-academic-citation)
 - [License](#-license)
 
@@ -167,18 +169,47 @@ sequenceDiagram
     Skyrim-->>Player: Displays dialogue and triggers synchronized camera/voice
 ```
 
-### Structured Output Contract
+### Structured I/O Contract & Training Dynamics
 
-The model is strictly constrained to output a single, RFC-compliant JSON object adhering to this schema:
+The fine-tuned model ([`SkyrimLLMBridge-Gemma-2B`](https://huggingface.co/devPirate01/SkyrimLLMBridge-Gemma-2B)) was specifically trained on Skyrim dialogue interactions, lore constraints, and quest progression dynamics. Rather than generating unconstrained prose, the model consumes game state context and emits an authoritative JSON proposal:
+
+#### 1. Input Turn (Game Engine & Player Context)
+Serialized by the bridge from `request.json`, active quest rules, and NPC profile:
 
 ```json
 {
   "schema_version": "1.0",
-  "dialogue": "I poured Vigund's mead myself, and it carried the distinct bitter reek of Nightshade.",
-  "player_intent": "ask_for_information",
-  "topic": "poison",
-  "policy_id": "witness_reveal_c1",
-  "response_type": "provide_quest_information",
+  "request_id": "req_042",
+  "session": {
+    "session_id": "session_skyrim_01",
+    "experimental_group": "gameplay"
+  },
+  "quest": {
+    "quest_id": "poisoned_mead",
+    "quest_stage": 10,
+    "known_clues": ["C1"]
+  },
+  "npc": {
+    "npc_id": "tavern_witness",
+    "location": "The Bannered Mare"
+  },
+  "player": {
+    "message": "Remind me what you smelled on Vigund's cup."
+  }
+}
+```
+
+#### 2. Model Output Turn (Structured Response)
+The model strictly outputs a single RFC-compliant JSON object adhering to this contract:
+
+```json
+{
+  "schema_version": "1.0",
+  "dialogue": "I handled Vigund's mead. His cup carried the bitter scent of Nightshade.",
+  "player_intent": "ask_for_repetition",
+  "topic": "drink",
+  "policy_id": "witness_repeat_c1",
+  "response_type": "repeat_known_information",
   "clue_claims": ["C1"],
   "action_request": null
 }
@@ -186,7 +217,8 @@ The model is strictly constrained to output a single, RFC-compliant JSON object 
 
 * **`policy_id` & `response_type` Coupling:** Each narrative policy strictly allows only specific response types. The validator immediately intercepts and rejects invalid combinations.
 * **`clue_claims` Gating:** If the model asserts a clue claim (e.g., `["C1"]`) when the player has not met prerequisite quest conditions, the validator suppresses the claim.
-* **`action_request` Isolation:** Game actions cannot be directly initiated by model hallucinations; they require authoritative validation.
+* **`action_request` Extensibility:** Game actions (e.g. `attack`, `trade`, `flee`) cannot be executed by LLM hallucinations; they require authoritative validation before reaching the game engine.
+* **Cross-Game Applicability:** Because the schema decouples game rules from conversational text, developers can adopt this exact JSON structure to drive AI dialogue in other Skyrim quests or port it to other game engines (Fallout 4, Starfield, Unreal, Unity).
 
 ---
 
@@ -198,9 +230,10 @@ The model is strictly constrained to output a single, RFC-compliant JSON object 
 | **Storage & I/O** | `StorageUtil` (Papyrus plugin) | Thread-safe, cross-process atomic JSON persistence |
 | **Bridge Runtime** | Python 3.10+, `requests`, `python-dotenv` | Asynchronous file polling, session management, payload routing |
 | **Validation Layer** | Python (`dataclasses`, custom schema validators) | Deterministic contract enforcement, policy auditing, fail-safe fallbacks |
-| **Inference Server** | Unsloth Desktop, KoboldCpp, llama.cpp | Local quantized model serving (GGUF / BnB 4-bit) |
+| **Inference Server** | KoboldCpp, Unsloth Desktop, llama.cpp | Local quantized model serving (GGUF / BnB 4-bit) |
+| **AI Model Checkpoint** | [**SkyrimLLMBridge-Gemma-2B**](https://huggingface.co/devPirate01/SkyrimLLMBridge-Gemma-2B) | QLoRA fine-tuned Gemma 2B model weights (GGUF Q4_K_M) |
 | **Hardware Acceleration** | AMD ROCm 7.x (RX 6900 XT), NVIDIA CUDA compatible | GPU tensor acceleration for local sub-second inference |
-| **Model Adaptation** | PyTorch, Hugging Face `transformers`, `trl`, QLoRA | Supervised fine-tuning of Gemma 4 (2B) on structured JSON schemas |
+| **Model Adaptation** | PyTorch, Hugging Face `transformers`, `trl`, Unsloth QLoRA | Supervised fine-tuning of Gemma 4 (2B) on structured JSON schemas |
 
 ---
 
@@ -287,65 +320,112 @@ The compiled Skyrim mod files are included in the [`skyrim_plugin/`](skyrim_plug
 | [Extended Vanilla Menus](https://www.nexusmods.com/skyrimspecialedition/mods/49900) | Free-text player input interface |
 | [ConsoleUtilSSE NG](https://www.nexusmods.com/skyrimspecialedition/mods/76649) | Console utility functions used by the scripting stack |
 
-> The AI evaluation and Python bridge can be run entirely **without Skyrim installed** — see Option A below.
+> The AI evaluation and Python bridge can be run entirely **without Skyrim installed** — see Option B below.
 
 ---
 
-### Option A: Standalone AI Verification (No Skyrim Required)
+## 🛠️ For Modders: An Expandable Framework
 
-You can reproduce the full deterministic reasoning pipeline, prompt construction, and validation suite **without installing Skyrim**:
+While the included Nexus mod only features a single NPC (Runa) as a proof-of-concept, **this framework is entirely expandable**. The Python backend natively handles dynamic character profiles, session memory, and deterministic quest gating. 
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/devPirate01/SkyrimLLMBridge
-   cd skyrim-llm-bridge
-   ```
+Mod authors can build upon this open-source bridge to:
+* Enable hallucination-free AI dialogue for **all characters** in the game by injecting new JSON profiles.
+* Add **in-game actions** (e.g., attacking, trading, pathfinding) triggered by the JSON schema outputs.
+* Integrate **Speech-to-Text (STT)** and **Text-to-Speech (TTS)** pipelines directly into the Python server.
 
-2. **Install core runtime dependencies:**
+---
+
+### Option A: Complete Skyrim Setup (The 3 Steps)
+
+To play the mod in-game, you must complete all three parts of the setup:
+
+#### Step 1: The Skyrim Plugin (Nexus Mods)
+1. Download and install the core game plugin via Vortex or Mod Organizer 2:  
+   👉 **[Skyrim LLM Bridge on Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/194492)**
+2. Make sure you also install all standard prerequisite mods listed on Nexus:
+   * **SKSE64** (Skyrim Script Extender)
+   * **Address Library for SKSE Plugins** (All In One)
+   * **SkyUI**
+   * **PapyrusUtil AE/SE** (provides `JsonUtil` and `StorageUtil`)
+   * **powerofthree's Papyrus Extender**
+   * **DbMiscFunctions**
+   * **Extended Vanilla Menus** (powers the player text input prompt)
+   * **ConsoleUtilSSE NG**
+
+#### Step 2: The AI Model & KoboldCpp (Hugging Face)
+The bridge requires our fine-tuned QLoRA model to prevent unbounded hallucinations and output valid JSON game states.
+1. Download `gemma-4-e2b-it.Q4_K_M.gguf` (~3.2 GB) from **[Hugging Face](https://huggingface.co/devPirate01/SkyrimLLMBridge-Gemma-2B)**.
+2. Download **[KoboldCpp](https://github.com/LostRuins/koboldcpp/releases)** (`koboldcpp.exe` for NVIDIA/CPU, or `koboldcpp_rocm.exe` for AMD).
+3. Double-click `koboldcpp.exe` to open the GUI launcher:
+   * **Model:** Click Browse and select `gemma-4-e2b-it.Q4_K_M.gguf`.
+   * **Context Size:** Set to `4096` (or minimum `2048`).
+   * **GPU Layers:** Set to `33` (or `-1` to offload all layers if GPU has 8GB+ VRAM; `0` for CPU).
+   * **Port:** `5001`
+   * **Host:** `127.0.0.1`
+4. Click **Launch**. Keep this window open. It will expose an OpenAI-compatible API at:
+   `http://127.0.0.1:5001/v1`
+
+#### Step 3: The Python Bridge Server (GitHub)
+The Python bridge acts as the middleware between Skyrim's Papyrus engine and KoboldCpp.
+1. Go to the **[Releases Page](https://github.com/devPirate01/SkyrimLLMBridge/releases/latest)** and download **`SkyrimLLMBridge_Server_v1.0.zip`**.  
+   *(Do NOT download the auto-generated Source code zip — it contains raw research datasets and evaluation suites).*
+2. Extract the ZIP into a clean directory (e.g. `C:\SkyrimLLMBridge`).
+3. Open a terminal (PowerShell or Command Prompt) in that folder and install runtime requirements:
    ```bash
    pip install -r requirements.txt
    ```
-
-3. **Configure environment:**
+4. Copy `.env.example` to `.env`:
    ```bash
-   copy .env.example .env    # On Windows (or 'cp .env.example .env' on Linux)
+   copy .env.example .env
    ```
-   Open `.env` and verify that `LLM_PROVIDER` points to your local model server (Unsloth Desktop, KoboldCpp, or any OpenAI-compatible endpoint).
-
-4. **Run the standalone test suite:**
-   ```bash
-   # Run the 30-case integration stress test:
-   python tests/test_comprehensive.py
-
-   # Or execute the full 100-case multi-seed evaluation runner:
-   python tests/run_frozen_evaluation_auto.py
-   ```
-
----
-
-### Option B: Full In-Game Skyrim Integration
-
-For live interactive gameplay inside *The Elder Scrolls V: Skyrim*:
-
-1. **Prerequisites:**
-   * *Skyrim Special Edition* (v1.6.x)
-   * [Skyrim Script Extender (SKSE64)](https://skse.silverlock.org/)
-   * [StorageUtil / PapyrusUtil SE](https://www.nexusmods.com/skyrimspecialedition/mods/13048)
-
-2. **Configure Skyrim Data Directory:**
-   In your `.env` file, point `SKYRIM_DATA_DIR` to your SKSE storage folder:
-   ```ini
-   SKYRIM_DATA_DIR=C:\Games\Skyrim Special Edition\Data\SKSE\Plugins\StorageUtilData\CompanionLLM
-   ```
-
-3. **Launch the Bridge Service:**
+5. Open `.env` in Notepad and configure the following:
+   * **Provider & KoboldCpp URL:**
+     ```ini
+     LLM_PROVIDER=koboldcpp
+     KOBOLDCPP_URL=http://127.0.0.1:5001/v1
+     KOBOLDCPP_MODEL=koboldcpp
+     ```
+     *(Note: If running KoboldCpp on another computer on your local network, replace `127.0.0.1` with that machine's LAN IP, e.g. `http://192.168.1.100:5001/v1`).*
+   * **Skyrim Data Directory:**
+     Point `SKYRIM_DATA_DIR` to the folder where Papyrus writes `request.json`:
+     * **Steam / Vortex default:**
+       ```ini
+       SKYRIM_DATA_DIR=C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\StorageUtilData\CompanionLLM
+       ```
+     * **Mod Organizer 2 (MO2) default:**
+       ```ini
+       SKYRIM_DATA_DIR=C:\Modding\MO2\overwrite\SKSE\Plugins\StorageUtilData\CompanionLLM
+       ```
+6. Start the bridge:
    ```bash
    python bridge.py
    ```
-   The bridge will enter active polling mode, monitoring `request.json`.
+   The terminal will display:
+   ```
+   Skyrim LLM Bridge initialized. Watching for request.json...
+   ```
+7. Launch Skyrim using `skse64_loader.exe`. Head to **The Bannered Mare** in Whiterun and speak to **Runa**!
 
-4. **Launch Skyrim via SKSE64:**
-   Start the game using `skse64_loader.exe`. Approach Runa in *The Bannered Mare* (Whiterun) and initiate conversation using free-text input.
+---
+
+### Option B: Standalone AI Verification (No Skyrim Required)
+
+You can reproduce the full deterministic reasoning pipeline, prompt construction, and validation suite **without installing Skyrim**:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/devPirate01/SkyrimLLMBridge
+   cd SkyrimLLMBridge
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Configure `.env`: Copy `.env.example` to `.env`. Set `LLM_PROVIDER=koboldcpp` (or `unsloth`).
+4. Run the 30-case integration test suite:
+   ```bash
+   python tests/test_comprehensive.py
+   ```
 
 ---
 

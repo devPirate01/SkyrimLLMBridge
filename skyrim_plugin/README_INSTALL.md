@@ -65,25 +65,32 @@ C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\
 
 Or wherever your Steam library is located.
 
-### Step 2 — Configure the Python Bridge
+### Step 2 — Configure the Python Bridge & KoboldCpp
 
-In the repository root, configure your `.env` file to point `SKYRIM_DATA_DIR` at the StorageUtil data folder:
-
-```ini
-SKYRIM_DATA_DIR=C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\StorageUtilData\CompanionLLM
-```
+1. Ensure **KoboldCpp** is running with `gemma-4-e2b-it.Q4_K_M.gguf` loaded on port `5001`.
+2. In the Python bridge folder, configure `.env`:
+   ```ini
+   LLM_PROVIDER=koboldcpp
+   KOBOLDCPP_URL=http://127.0.0.1:5001/v1
+   KOBOLDCPP_MODEL=koboldcpp
+   
+   # Standard Steam Path:
+   SKYRIM_DATA_DIR=C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\StorageUtilData\CompanionLLM
+   # Or for Mod Organizer 2 users:
+   # SKYRIM_DATA_DIR=C:\Modding\MO2\overwrite\SKSE\Plugins\StorageUtilData\CompanionLLM
+   ```
 
 StorageUtil automatically creates this folder on first game launch if it doesn't already exist.
 
 ### Step 3 — Start the Bridge
 
-From the repository root, run:
+From the bridge directory, run:
 
 ```bash
 python bridge.py
 ```
 
-Leave this terminal window open. You will see `Waiting for request.json...` when it is ready.
+Leave this terminal window open. You will see `Skyrim LLM Bridge initialized. Watching for request.json...` when it is ready.
 
 ### Step 4 — Launch Skyrim via SKSE
 

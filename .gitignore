@@ -38,9 +38,10 @@ desktop.ini
 *.suo
 *.user
 
-# Large model checkpoints / binary weights
+# Large model checkpoints / binary weights / archives
 *.gguf
 *.bin
 *.safetensors
 *.pt
 *.pth
+*.zip
